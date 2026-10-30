@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harbourline Plumbing &amp; Heating | Bristol</title>
+<meta name="description" content="Gas Safe plumbing, boiler servicing and heating installs across Bristol and North Somerset. Same-day call-outs, fixed prices.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230B3C5D'/%3E%3Cpath d='M14 40c6-8 12-8 18 0s12 8 18 0' stroke='%23F2A93B' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3Cpath d='M14 26c6-8 12-8 18 0s12 8 18 0' stroke='%23fff' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --navy:#0B3C5D; --navy-deep:#072A42; --amber:#F2A93B; --amber-dark:#D98E1E;
+  --ink:#16222C; --muted:#5B6B78; --line:#E3E9EE; --bg:#F6F9FB; --white:#fff;
+  --radius:14px;
+  --font:"Inter","Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);color:var(--ink);line-height:1.6;background:var(--white);-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1160px,92%);margin-inline:auto}
+h1,h2,h3{line-height:1.15;letter-spacing:-.02em;color:var(--navy-deep)}
+h2{font-size:clamp(1.75rem,3.4vw,2.5rem);margin-bottom:.6rem}
+.lead{color:var(--muted);font-size:1.075rem;max-width:58ch}
+.eyebrow{font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--amber-dark);margin-bottom:.6rem}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.9rem 1.5rem;border-radius:999px;font-weight:700;font-size:1rem;border:2px solid transparent;cursor:pointer;transition:transform .2s,background .2s,box-shadow .2s;font-family:inherit}
+.btn:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.btn-primary{background:var(--amber);color:var(--navy-deep)}
+.btn-primary:hover{background:var(--amber-dark);transform:translateY(-2px);box-shadow:0 8px 20px rgba(217,142,30,.35)}
+.btn-ghost{border-color:rgba(255,255,255,.55);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+
+/* top bar */
+.topbar{background:var(--navy-deep);color:#cfe0ec;font-size:.88rem}
+.topbar .wrap{display:flex;justify-content:space-between;gap:1rem;padding:.5rem 0;flex-wrap:wrap}
+.topbar a{color:#fff;font-weight:600}
+
+/* header */
+header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:74px}
+.logo{display:flex;align-items:center;gap:.7rem;font-weight:800;color:var(--navy-deep);font-size:1.2rem;letter-spacing:-.02em}
+.logo small{display:block;font-size:.68rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:-2px}
+nav ul{display:flex;gap:1.9rem;list-style:none;align-items:center}
+nav a{font-weight:600;font-size:.96rem;color:var(--ink);padding:.4rem 0;border-bottom:2px solid transparent}
+nav a:hover{border-color:var(--amber)}
+.nav-cta{background:var(--navy);color:#fff!important;padding:.6rem 1.2rem!important;border-radius:999px;border:0!important}
+.nav-cta:hover{background:var(--navy-deep)}
+.menu-btn{display:none;background:none;border:0;padding:.5rem;cursor:pointer}
+.menu-btn span{display:block;width:24px;height:2px;background:var(--navy-deep);margin:5px 0;transition:.25s}
+
+/* hero */
+.hero{position:relative;background:linear-gradient(135deg,var(--navy) 0%,var(--navy-deep) 100%);color:#fff;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(600px 400px at 85% 10%,rgba(242,169,59,.22),transparent 60%),
+  radial-gradient(500px 500px at 0% 100%,rgba(255,255,255,.07),transparent 60%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:3.5rem;align-items:center;padding:5.5rem 0 6rem}
+.hero h1{color:#fff;font-size:clamp(2.3rem,5vw,3.7rem);margin-bottom:1.1rem}
+.hero h1 em{font-style:normal;color:var(--amber)}
+.hero p.sub{font-size:1.15rem;color:#cfe0ec;max-width:52ch;margin-bottom:2rem}
+.hero .actions{display:flex;gap:.9rem;flex-wrap:wrap;margin-bottom:2.2rem}
+.badges{display:flex;gap:1.6rem;flex-wrap:wrap;font-size:.92rem;color:#cfe0ec}
+.badges span{display:flex;align-items:center;gap:.5rem}
+.badges svg{width:20px;height:20px;color:var(--amber)}
+.quote-card{background:#fff;color:var(--ink);border-radius:20px;padding:2rem;box-shadow:0 30px 60px rgba(0,0,0,.3)}
+.quote-card h2{font-size:1.45rem;margin-bottom:.3rem}
+.quote-card p{color:var(--muted);font-size:.94rem;margin-bottom:1.2rem}
+label{display:block;font-size:.84rem;font-weight:600;margin-bottom:.3rem;color:var(--navy-deep)}
+input,select,textarea{width:100%;padding:.8rem .9rem;border:1.5px solid var(--line);border-radius:10px;font:inherit;background:#fff;color:var(--ink);margin-bottom:.95rem}
+input:focus,select:focus,textarea:focus{border-color:var(--navy)}
+.quote-card .btn{width:100%;justify-content:center}
+.form-note{font-size:.8rem;color:var(--muted);margin:.8rem 0 0;text-align:center}
+.form-ok{display:none;text-align:center;padding:1.5rem 0}
+.form-ok strong{display:block;font-size:1.2rem;color:var(--navy-deep);margin-bottom:.4rem}
+
+/* trust strip */
+.trust{background:var(--bg);border-bottom:1px solid var(--line)}
+.trust .wrap{display:flex;justify-content:space-between;align-items:center;gap:1.5rem;flex-wrap:wrap;padding:1.6rem 0}
+.trust p{font-size:.85rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.trust ul{display:flex;gap:2.4rem;list-style:none;flex-wrap:wrap;font-weight:800;color:#8b9aa6;font-size:1.05rem}
+
+section{padding:5.5rem 0}
+.sec-head{margin-bottom:3rem}
+
+/* services */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.9rem;transition:transform .25s,box-shadow .25s,border-color .25s}
+.card:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(11,60,93,.12);border-color:transparent}
+.icon{width:54px;height:54px;border-radius:14px;background:#EAF3F9;color:var(--navy);display:grid;place-items:center;margin-bottom:1.2rem}
+.icon svg{width:28px;height:28px}
+.card h3{font-size:1.2rem;margin-bottom:.5rem}
+.card p{color:var(--muted);font-size:.97rem}
+.card a.more{display:inline-block;margin-top:1rem;font-weight:700;font-size:.92rem;color:var(--navy)}
+.card a.more:hover{color:var(--amber-dark)}
+
+/* about split */
+.split{background:var(--bg)}
+.split .wrap{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.illus{background:linear-gradient(160deg,#DCEBF5,#EEF5FA);border-radius:24px;aspect-ratio:1/.92;display:grid;place-items:center;position:relative;overflow:hidden}
+.illus svg{width:86%}
+.ticks{list-style:none;margin:1.6rem 0 2rem;display:grid;gap:.9rem}
+.ticks li{display:flex;gap:.8rem;align-items:flex-start}
+.ticks svg{flex:none;width:22px;height:22px;color:#fff;background:var(--navy);border-radius:50%;padding:4px;margin-top:2px}
+.ticks b{color:var(--navy-deep)}
+
+/* process */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;counter-reset:s}
+.step{position:relative;padding-top:3.4rem}
+.step::before{counter-increment:s;content:counter(s);position:absolute;top:0;left:0;width:42px;height:42px;border-radius:50%;background:var(--amber);color:var(--navy-deep);font-weight:800;display:grid;place-items:center}
+.step::after{content:"";position:absolute;top:21px;left:54px;right:-1rem;height:2px;background:repeating-linear-gradient(90deg,var(--line) 0 8px,transparent 8px 14px)}
+.step:last-child::after{display:none}
+.step h3{font-size:1.1rem;margin-bottom:.4rem}
+.step p{color:var(--muted);font-size:.95rem}
+
+/* reviews */
+.reviews{background:var(--navy-deep);color:#fff}
+.reviews h2{color:#fff}
+.reviews .lead{color:#b5cadb}
+.reviews .card{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.12);color:#fff}
+.reviews .card:hover{background:rgba(255,255,255,.1)}
+.stars{color:var(--amber);letter-spacing:.15em;margin-bottom:.8rem}
+.reviews blockquote{font-size:1rem;color:#e4eef5;margin-bottom:1.2rem}
+.who{font-weight:700;font-size:.95rem}
+.who span{display:block;font-weight:400;color:#97b1c4;font-size:.85rem}
+
+/* areas + faq */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:4rem}
+.areas{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.5rem}
+.areas span{background:var(--bg);border:1px solid var(--line);padding:.45rem 1rem;border-radius:999px;font-weight:600;font-size:.92rem}
+details{border-bottom:1px solid var(--line);padding:1.1rem 0}
+details summary{cursor:pointer;font-weight:700;color:var(--navy-deep);list-style:none;display:flex;justify-content:space-between;gap:1rem}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:"+";font-size:1.4rem;line-height:1;color:var(--amber-dark);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--muted);margin-top:.7rem;font-size:.97rem}
+
+/* cta band */
+.band{background:linear-gradient(100deg,var(--amber),#F7C268);padding:3.2rem 0}
+.band .wrap{display:flex;justify-content:space-between;align-items:center;gap:1.5rem;flex-wrap:wrap}
+.band h2{margin:0;font-size:clamp(1.5rem,3vw,2.1rem)}
+.band p{color:#4a3a14;margin-top:.3rem}
+.band .btn{background:var(--navy-deep);color:#fff}
+.band .btn:hover{background:#000}
+
+/* contact */
+.contact .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:4rem}
+.info{list-style:none;display:grid;gap:1.4rem;margin-top:2rem}
+.info li{display:flex;gap:1rem}
+.info .icon{width:46px;height:46px;margin:0;flex:none}
+.info b{display:block;color:var(--navy-deep)}
+.info span,.info a{color:var(--muted)}
+.info a:hover{color:var(--navy)}
+.hours{width:100%;border-collapse:collapse;font-size:.95rem}
+.hours td{padding:.55rem 0;border-bottom:1px solid var(--line)}
+.hours td:last-child{text-align:right;font-weight:600}
+.map{margin-top:1.8rem;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:#E6EFF5}
+
+/* footer */
+footer{background:var(--navy-deep);color:#a9bfd0;padding:4rem 0 1.6rem;font-size:.94rem}
+footer .cols{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.12)}
+footer h4{color:#fff;margin-bottom:1rem;font-size:.95rem}
+footer ul{list-style:none;display:grid;gap:.55rem}
+footer a:hover{color:var(--amber)}
+footer .logo{color:#fff;margin-bottom:1rem}
+footer .logo small{color:#8ba4b8}
+.legal{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding-top:1.4rem;font-size:.84rem}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{opacity:1;transform:none;transition:none}.btn,.card{transition:none}}
+
+@media (max-width:960px){
+  .hero .wrap,.split .wrap,.two,.contact .wrap{grid-template-columns:1fr;gap:2.5rem}
+  .hero .wrap{padding:3.5rem 0 4rem}
+  .grid-3{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr;row-gap:2.5rem}
+  .step::after{display:none}
+  footer .cols{grid-template-columns:1fr 1fr}
+  .menu-btn{display:block}
+  nav{position:absolute;top:74px;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);display:none;padding:1rem 4%}
+  nav.open{display:block}
+  nav ul{flex-direction:column;align-items:flex-start;gap:1rem}
+}
+@media (max-width:620px){
+  section{padding:3.8rem 0}
+  .grid-3,.steps,footer .cols{grid-template-columns:1fr}
+  .topbar .wrap{justify-content:center;text-align:center}
+  .trust ul{gap:1.2rem}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>Gas Safe registered. Same-day call-outs across Bristol and North Somerset.</span>
+    <span>24/7 emergency line: <a href="tel:01179608847">0117 960 8847</a></span>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Harbourline Plumbing and Heating, home">
+      <svg width="40" height="40" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#0B3C5D"/><path d="M14 40c6-8 12-8 18 0s12 8 18 0" stroke="#F2A93B" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M14 26c6-8 12-8 18 0s12 8 18 0" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round"/></svg>
+      <span>Harbourline<small>Plumbing &amp; Heating</small></span>
+    </a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    <nav id="nav" aria-label="Main">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#process">How it works</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a class="nav-cta" href="#contact">Get a quote</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow" style="color:var(--amber)">Bristol's local heating engineers</p>
+      <h1>Reliable plumbing and heating, <em>fixed properly</em> the first time.</h1>
+      <p class="sub">Boiler repairs and installs, leaks, bathrooms and annual servicing. Fixed prices agreed before we start, and a tidy van outside your door.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#contact">Get a free quote
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="tel:01179608847">Call 0117 960 8847</a>
+      </div>
+      <div class="badges">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Gas Safe registered</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Fully insured</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Fixed-price quotes</span>
+      </div>
+    </div>
+
+    <div class="quote-card" id="quote">
+      <form id="quoteForm" novalidate>
+        <h2>Request a callback</h2>
+        <p>Tell us what's wrong. We'll ring you back within the hour during opening times.</p>
+        <label for="q-name">Your name</label>
+        <input id="q-name" name="name" autocomplete="name" required>
+        <label for="q-phone">Phone number</label>
+        <input id="q-phone" name="phone" type="tel" autocomplete="tel" required>
+        <label for="q-job">What do you need?</label>
+        <select id="q-job" name="job">
+          <option>Boiler repair</option>
+          <option>New boiler or heating system</option>
+          <option>Leak or burst pipe</option>
+          <option>Bathroom or kitchen plumbing</option>
+          <option>Annual boiler service</option>
+          <option>Something else</option>
+        </select>
+        <button class="btn btn-primary" type="submit">Call me back</button>
+        <p class="form-note">No spam, no pressure. Just a straight answer.</p>
+      </form>
+      <div class="form-ok" id="formOk" role="status" aria-live="polite">
+        <strong>Thanks, we've got your details.</strong>
+        <span>One of the team will ring you shortly.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="wrap">
+    <p>Accredited and approved by</p>
+    <ul>
+      <li>Gas Safe</li><li>Worcester Bosch</li><li>Vaillant</li><li>Which? Trusted</li><li>Checkatrade</li>
+    </ul>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">What we do</p>
+      <h2>Everything your home needs to stay warm and dry</h2>
+      <p class="lead">From a dripping tap to a full heating system, one friendly local team handles it start to finish.</p>
+    </div>
+    <div class="grid-3">
+      <article class="card rv">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2c3 4 6 6.5 6 11a6 6 0 0 1-12 0c0-2 1-3.5 2-5 .5 2 1.5 3 2.500 3 0-3 .5-6 1.500-9Z"/></svg></div>
+        <h3>Boiler repairs</h3>
+        <p>No heating or hot water? We carry the common parts on the van so most faults are fixed in a single visit.</p>
+        <a class="more" href="#contact">Book a repair &rarr;</a>
+      </article>
+      <article class="card rv">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="3"/><circle cx="12" cy="13" r="4"/><path d="M8 7h.01M12 7h4"/></svg></div>
+        <h3>Boiler installation</h3>
+        <p>Efficient new boilers from leading brands, fitted cleanly with a clear written quote and a manufacturer guarantee.</p>
+        <a class="more" href="#contact">Get an install quote &rarr;</a>
+      </article>
+      <article class="card rv">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s6 6.500 6 11a6 6 0 0 1-12 0c0-4.500 6-11 6-11Z"/></svg></div>
+        <h3>Leaks and emergencies</h3>
+        <p>Burst pipe or flooding? Call the emergency line any hour. We stop the water first, then talk through the fix.</p>
+        <a class="more" href="tel:01179608847">Call now &rarr;</a>
+      </article>
+      <article class="card rv">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16v3a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5v-3ZM6 12V6a2 2 0 0 1 4 0M7 20l-1 2M17 20l1 2"/></svg></div>
+        <h3>Bathrooms and kitchens</h3>
+        <p>Taps, showers, toilets and full refits. We coordinate tiling and electrics so you deal with one team.</p>
+        <a class="more" href="#contact">Plan a refit &rarr;</a>
+      </article>
+      <article class="card rv">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v4l3 2"/><circle cx="12" cy="12" r="9"/></svg></div>
+        <h3>Servicing and safety checks</h3>
+        <p>Annual boiler services, landlord gas safety certificates and system power flushes to keep bills and risks down.</p>
+        <a class="more" href="#contact">Book a service &rarr;</a>
+      </article>
+      <article class="card rv">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l2-6 4 12 2-6h6"/></svg></div>
+        <h3>Radiators and underfloor</h3>
+        <p>Cold spots, noisy pipes, new radiators and underfloor heating, balanced so every room warms evenly.</p>
+        <a class="more" href="#contact">Ask about heating &rarr;</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="split" id="about">
+  <div class="wrap">
+    <div class="illus rv" aria-hidden="true">
+      <svg viewBox="0 0 400 360" fill="none">
+        <rect x="150" y="40" width="100" height="150" rx="14" fill="#fff" stroke="#0B3C5D" stroke-width="4"/>
+        <circle cx="200" cy="105" r="26" fill="#EAF3F9" stroke="#0B3C5D" stroke-width="4"/>
+        <path d="M200 105l12-12" stroke="#F2A93B" stroke-width="5" stroke-linecap="round"/>
+        <rect x="168" y="150" width="64" height="10" rx="5" fill="#0B3C5D" opacity=".18"/>
+        <path d="M200 190v50h-120v50M200 240h120v50" stroke="#0B3C5D" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M200 190v50h-120v50M200 240h120v50" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity=".55"/>
+        <rect x="52" y="290" width="56" height="40" rx="8" fill="#F2A93B"/>
+        <rect x="292" y="290" width="56" height="40" rx="8" fill="#F2A93B"/>
+        <circle cx="80" cy="310" r="8" fill="#fff"/><circle cx="320" cy="310" r="8" fill="#fff"/>
+        <path d="M60 60q10-14 20 0t20 0M300 90q10-14 20 0t20 0" stroke="#0B3C5D" stroke-width="3" stroke-linecap="round" opacity=".3"/>
+      </svg>
+    </div>
+    <div class="rv">
+      <p class="eyebrow">Why Harbourline</p>
+      <h2>A small local team that treats your home like our own</h2>
+      <p class="lead">Harbourline started with one van and one rule: turn up when we say, fix it properly and leave it cleaner than we found it. We still work that way.</p>
+      <ul class="ticks">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><b>Fixed prices, in writing.</b> The quote you accept is the price you pay.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><b>Engineers, not salespeople.</b> Honest advice, including when you don't need a new boiler.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><b>Work guaranteed.</b> Every job is covered, and we come back if something isn't right.</span></li>
+      </ul>
+      <a class="btn btn-primary" href="#contact">Talk to the team</a>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">How it works</p>
+      <h2>Four simple steps, no surprises</h2>
+    </div>
+    <div class="steps">
+      <div class="step rv"><h3>Get in touch</h3><p>Call or send the form. We'll ask a few questions about the problem.</p></div>
+      <div class="step rv"><h3>Clear quote</h3><p>You get a fixed price in writing, with no hidden call-out fees.</p></div>
+      <div class="step rv"><h3>We do the work</h3><p>A uniformed engineer arrives on time, protects your floors and gets on with it.</p></div>
+      <div class="step rv"><h3>Sign-off and guarantee</h3><p>We talk you through what was done and leave your paperwork and warranty.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Customer reviews</p>
+      <h2>What our neighbours say</h2>
+      <p class="lead">Sample testimonials shown for demonstration. Replace with your own verified reviews.</p>
+    </div>
+    <div class="grid-3">
+      <figure class="card rv"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>Boiler packed up on a freezing Sunday. They were here within two hours and had the heating back on before tea.</blockquote><figcaption class="who">Priya N.<span>Southville</span></figcaption></figure>
+      <figure class="card rv"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>Clear quote, no upsell, and they cleaned up after themselves. New boiler in a day. Would recommend to anyone.</blockquote><figcaption class="who">Tom R.<span>Clifton</span></figcaption></figure>
+      <figure class="card rv"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>Redid our bathroom start to finish. Tidy, on time and the finish is better than we hoped for.</blockquote><figcaption class="who">Hannah &amp; Ade<span>Bedminster</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap two">
+    <div class="rv">
+      <p class="eyebrow">Where we work</p>
+      <h2>Covering Bristol and the surrounding area</h2>
+      <p class="lead">Most visits are within 30 minutes of the city centre.</p>
+      <div class="areas">
+        <span>Clifton</span><span>Redland</span><span>Southville</span><span>Bedminster</span><span>Easton</span><span>Filton</span><span>Keynsham</span><span>Portishead</span><span>Clevedon</span><span>Nailsea</span><span>Thornbury</span><span>Kingswood</span>
+      </div>
+    </div>
+    <div class="rv">
+      <p class="eyebrow">Common questions</p>
+      <details open><summary>Do you charge a call-out fee?</summary><p>We quote a fixed price for the job after hearing the problem. Emergency out-of-hours visits are priced clearly on the phone before we set off.</p></details>
+      <details><summary>How quickly can you come out?</summary><p>Most weekday calls are seen the same or next day. For leaks and no-heating emergencies we aim to be with you as soon as we can.</p></details>
+      <details><summary>Is my new boiler guaranteed?</summary><p>Yes. New installs come with the manufacturer's guarantee, plus our own workmanship cover.</p></details>
+      <details><summary>Which payment methods do you accept?</summary><p>Card, bank transfer or cash on completion. Larger installs can be split into stage payments.</p></details>
+    </div>
+  </div>
+</section>
+
+<div class="band">
+  <div class="wrap">
+    <div class="rv">
+      <h2>No heating? Water where it shouldn't be?</h2>
+      <p>Our emergency line is answered by a real person, day or night.</p>
+    </div>
+    <a class="btn" href="tel:01179608847">Call 0117 960 8847</a>
+  </div>
+</div>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="rv">
+      <p class="eyebrow">Contact</p>
+      <h2>Let's get it sorted</h2>
+      <p class="lead">Send us a message or give us a ring. We'll get back to you the same working day.</p>
+      <ul class="info">
+        <li><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.500 1.500a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg></div><div><b>Phone</b><a href="tel:01179608847">0117 960 8847</a></div></li>
+        <li><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div><div><b>Email</b><a href="mailto:hello@harbourline.example">hello@harbourline.example</a></div></li>
+        <li><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.200 7-11a7 7 0 0 0-14 0c0 4.800 7 11 7 11Z"/><circle cx="12" cy="10" r="2.500"/></svg></div><div><b>Workshop</b><span>Unit 4, Quay Lane Trading Estate<br>Bristol BS1 6XX</span></div></li>
+      </ul>
+    </div>
+    <div class="rv">
+      <div class="card" style="padding:2rem">
+        <h3 style="margin-bottom:1rem">Opening hours</h3>
+        <table class="hours">
+          <tr><td>Monday to Friday</td><td>7:30am to 6:00pm</td></tr>
+          <tr><td>Saturday</td><td>8:00am to 2:00pm</td></tr>
+          <tr><td>Sunday</td><td>Emergencies only</td></tr>
+          <tr><td>Emergency line</td><td>24 hours</td></tr>
+        </table>
+        <div class="map" aria-hidden="true">
+          <svg viewBox="0 0 520 200" width="100%" height="200" preserveAspectRatio="xMidYMid slice">
+            <rect width="520" height="200" fill="#E6EFF5"/>
+            <path d="M-10 150C80 120 140 170 240 140S400 90 540 120" stroke="#BCD6E8" stroke-width="26" fill="none"/>
+            <path d="M0 60H520M0 110H520M120 0V200M300 0V200M420 0V200" stroke="#fff" stroke-width="8"/>
+            <g transform="translate(300 62)"><path d="M0 40S22 20 22 2a22 22 0 0 0-44 0C-22 20 0 40 0 40Z" fill="#0B3C5D"/><circle cy="2" r="8" fill="#F2A93B"/></g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="logo" href="#top">
+          <svg width="40" height="40" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#F2A93B"/><path d="M14 40c6-8 12-8 18 0s12 8 18 0" stroke="#0B3C5D" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M14 26c6-8 12-8 18 0s12 8 18 0" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round"/></svg>
+          <span>Harbourline<small>Plumbing &amp; Heating</small></span>
+        </a>
+        <p>Local plumbing and heating engineers serving Bristol and North Somerset.</p>
+      </div>
+      <div><h4>Services</h4><ul><li><a href="#services">Boiler repairs</a></li><li><a href="#services">Boiler installs</a></li><li><a href="#services">Leaks and emergencies</a></li><li><a href="#services">Bathrooms</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="#about">About us</a></li><li><a href="#process">How it works</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+      <div><h4>Get in touch</h4><ul><li><a href="tel:01179608847">0117 960 8847</a></li><li><a href="mailto:hello@harbourline.example">hello@harbourline.example</a></li><li>Unit 4, Quay Lane, Bristol</li></ul></div>
+    </div>
+    <div class="legal">
+      <span>&copy; 2026 Harbourline Plumbing &amp; Heating Ltd. All rights reserved.</span>
+      <span>Privacy policy &nbsp;&middot;&nbsp; Terms &nbsp;&middot;&nbsp; Cookies</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btn=document.querySelector('.menu-btn'),nav=document.getElementById('nav');
+  btn.addEventListener('click',function(){
+    var o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o);
+  });
+  nav.addEventListener('click',function(e){if(e.target.tagName==='A'){nav.classList.remove('open');btn.setAttribute('aria-expanded','false')}});
+
+  var els=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+    els.forEach(function(el,i){el.style.transitionDelay=(i%3)*80+'ms';io.observe(el)});
+  } else {els.forEach(function(el){el.classList.add('in')})}
+
+  var f=document.getElementById('quoteForm');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var n=f.name.value.trim(),p=f.phone.value.trim();
+    if(!n||!p){(n?f.phone:f.name).focus();return}
+    f.style.display='none';document.getElementById('formOk').style.display='block';
+  });
+})();
+</script>
+</body>
+</html>
